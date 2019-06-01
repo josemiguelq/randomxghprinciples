@@ -7,7 +7,7 @@
  */
 
 import React, {useState} from 'react';
-import {Button, Platform, StyleSheet, Text, View} from 'react-native';
+import {Button, Platform, StyleSheet, Text, View, ImageBackground   } from 'react-native';
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -30,10 +30,11 @@ export default function App(props) {
 
     return (
         <View style={styles.container}>
+            <ImageBackground source={require('./resource/images/bg-horse.jpg')} style={{width: '100%', height: '50%'}}>
             <Text style={styles.welcome}>Principio do dia</Text>
             <Text style={styles.instructions}>{texto}</Text>
             <Button onPress={generate} title={'Random'}/>
-
+            </ImageBackground>
         </View>
     );
 

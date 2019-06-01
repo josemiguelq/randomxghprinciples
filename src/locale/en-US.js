@@ -1,4 +1,5 @@
 export default {
+    shareButton : 'Share',
     phrases: [
         {
             title: 'Axioma 1',

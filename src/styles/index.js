@@ -10,7 +10,6 @@ export default StyleSheet.create({
     messageBox: {
         backgroundColor: '#ef553a',
         paddingTop: 10,
-        paddingBottom: 20,
         paddingHorizontal: 20,
         borderRadius: 10
     },

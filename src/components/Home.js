@@ -15,10 +15,8 @@ export default function Home() {
                 <Text style={Styles.messageBoxTitle}>{phrase.title}</Text>
                 <Text style={Styles.messageBoxSubTitle}>{phrase.subTitle}</Text>
                 <Text style={Styles.messageBoxBody}>{phrase.message}</Text>
+                <ShareButton toShare={phrase}/>
             </View>
-            {/*<Button onPress={() => share(phrase)} title={'Share'}/>*/}
-            <ShareButton toShare={phrase}/>
-
         </View>
     );
 };

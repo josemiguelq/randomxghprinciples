@@ -1,9 +1,9 @@
 import { createAppContainer, createStackNavigator } from "react-navigation";
-import Home from "./components/Home";
+import Routes from "./routes";
 
 const StackNavigator = createStackNavigator({
-    Home: {
-        screen: Home,
+    Routes: {
+        screen: Routes,
         navigationOptions: {
             title: 'eXtreme Go Horse'
         }
@@ -11,4 +11,3 @@ const StackNavigator = createStackNavigator({
 });
 
 export default createAppContainer(StackNavigator)
-

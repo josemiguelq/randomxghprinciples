@@ -1,5 +1,4 @@
-import {Share} from 'react-native';
-
+import { Share } from 'react-native';
 
 export const share = axioma => {
     const shareOptions = {

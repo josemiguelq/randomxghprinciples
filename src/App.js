@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import {Button, Platform, StyleSheet, Text, View} from 'react-native';
 
 const instructions = Platform.select({
@@ -17,23 +17,28 @@ const instructions = Platform.select({
 });
 
 const principles = ['Principio 1', 'Principio 2']
-let texto = 'Algo 1'
-
-const generate = () => texto = principles[Math.floor(Math.random() * principles.length)];
+// let texto = 'Algo 1'
 
 type Props = {};
-export default class App extends Component<Props> {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>Principio do dia</Text>
-                {/*<Text style={styles.instructions}>To get started, edit App.js</Text>*/}
-                <Text style={styles.instructions}>{texto}</Text>
-                <Button onPress ={generate} title={'Random'}/>
-            </View>
-        );
+
+export default function App(props) {
+    const [texto, setTexto] = useState('Gabriel ')
+
+    function generate() {
+        setTexto('ASS')
     }
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.welcome}>Principio do dia</Text>
+            <Text style={styles.instructions}>{texto}</Text>
+            <Button onPress={generate} title={'Random'}/>
+
+        </View>
+    );
+
 }
+
 
 const styles = StyleSheet.create({
     container: {

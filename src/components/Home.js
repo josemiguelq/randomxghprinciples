@@ -8,7 +8,7 @@ export default function Home() {
     const phrases = translate('phrases');
     return (
         <View style={Styles.container}>
-            <Text>{Utils.selectRandomPhrase(phrases).title}</Text>
+            <Text>{Utils.selectRandomPhrase(phrases).subTitle}</Text>
             <Text>{Utils.selectRandomPhrase(phrases).message}</Text>
         </View>
     );

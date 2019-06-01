@@ -5,7 +5,7 @@ const StackNavigator = createStackNavigator({
     Home: {
         screen: Home,
         navigationOptions: {
-            title: 'Home'
+            title: 'eXtreme Go Horse'
         }
     }
 });

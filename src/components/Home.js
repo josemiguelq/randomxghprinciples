@@ -8,14 +8,17 @@ import share from  '../services/shareText'
 
 export default function Home() {
     const phrases = translate('phrases');
+
+    const selectedPhrase = Utils.selectRandomPhrase(phrases);
     const phrase = Utils.selectRandomPhrase(phrases)
     return (
         <View style={Styles.container}>
             <View style={Styles.messageBox}>
-                <Text style={Styles.messageBoxTitle}>{phrase.title}</Text>
-                <Text style={Styles.messageBoxSubTitle}>{phrase.subTitle}</Text>
-                <Text style={Styles.messageBoxBody}>{phrase.message}</Text>
+                <Text style={Styles.messageBoxTitle}>{selectedPhrase.title}</Text>
+                <Text style={Styles.messageBoxSubTitle}>{selectedPhrase.subTitle}</Text>
+                <Text style={Styles.messageBoxBody}>{selectedPhrase.message}</Text>
                 <ShareButton toShare={phrase}/>
+
             </View>
         </View>
     );

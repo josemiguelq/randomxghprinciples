@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, Text, View} from "react-native";
-import ShareButton from "./shareButton";
+import {Button, StyleSheet, Text, View} from "react-native";
 import translate from "../locale";
 import Utils from "../utils";
+import share from "../services/shareText";
 
 const styles = StyleSheet.create({
     messageCard: {
@@ -48,7 +48,7 @@ export default function MessageCard() {
                 <Text style={styles.messageBoxBody}>{selectedPhrase.message}</Text>
             </View>
             <View style={styles.shareButtonBox}>
-                <ShareButton toShare={selectedPhrase}/>
+                <Button color="#000" onPress={() => share(selectedPhrase)} title={translate('shareButton')} />
             </View>
         </View>
     );

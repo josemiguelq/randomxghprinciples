@@ -1,18 +1,19 @@
 import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import Home from '../components/Home';
-import Listing from '../components/Listing';
+import Home from '../containers/Home';
+import Listing from '../containers/Listing';
+import translate from "../locale";
 
 const Routes = createAppContainer(createBottomTabNavigator({
     Home: {
         screen: Home,
         navigationOptions: {
-            title: 'Axioma do dia'
+            title: translate('axiomOfTheDay')
         }
     },
     Listing: {
         screen: Listing,
         navigationOptions: {
-            title: 'Lista de Axiomas'
+            title: translate('listOfAxims')
         }
     }
 }));

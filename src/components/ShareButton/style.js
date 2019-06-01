@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native'
 
 export default StyleSheet.create({
     shButton: {
-        flex: 1,
+        // flex: 1,
         // alignContent: 'center',
         // justifyContent: 'center',
         // border: '1px solid #fff',

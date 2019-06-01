@@ -25,8 +25,8 @@ export default class App extends Component<Props> {
             <View style={styles.container}>
                 <Text style={styles.welcome}>Principio do dia</Text>
                 {/*<Text style={styles.instructions}>To get started, edit App.js</Text>*/}
-                <Text style={styles.instructions}>{principles[Math.floor(Math.random() * items.length)]}</Text>
-                <Button>Random</Button>Button>
+                <Text style={styles.instructions}>{principles[Math.floor(Math.random() * principles.length)]}</Text>
+                <Button title={'Random'}/>
             </View>
         );
     }

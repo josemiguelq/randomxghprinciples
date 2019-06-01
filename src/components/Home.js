@@ -6,12 +6,13 @@ import Styles from '../styles';
 
 export default function Home() {
     const phrases = translate('phrases');
+    const selectedPhrase = Utils.selectRandomPhrase(phrases);
     return (
         <View style={Styles.container}>
             <View style={Styles.messageBox}>
-                <Text style={Styles.messageBoxTitle}>{Utils.selectRandomPhrase(phrases).title}</Text>
-                <Text style={Styles.messageBoxSubTitle}>{Utils.selectRandomPhrase(phrases).subTitle}</Text>
-                <Text style={Styles.messageBoxBody}>{Utils.selectRandomPhrase(phrases).message}</Text>
+                <Text style={Styles.messageBoxTitle}>{selectedPhrase.title}</Text>
+                <Text style={Styles.messageBoxSubTitle}>{selectedPhrase.subTitle}</Text>
+                <Text style={Styles.messageBoxBody}>{selectedPhrase.message}</Text>
             </View>
         </View>
     );

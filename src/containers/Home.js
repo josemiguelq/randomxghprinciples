@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import CustomButtom from '../components/CustomButtom'
 import MessageCard from "../components/messageCard";
@@ -16,12 +16,16 @@ const styles = StyleSheet.create({
 
 export default function Home() {
     const phrases = translate('phrases');
-    const selectedPhrase = Utils.selectRandomPhrase(phrases);
+    const [text, setText] = useState(Utils.selectRandomPhrase(phrases));
+
+    function shuffle() {
+        setText(Utils.selectRandomPhrase(phrases));
+    }
 
     return (
         <View style={styles.container}>
-            <MessageCard selectedPhrase={selectedPhrase}/>
-            <CustomButtom title={'Gerar'} />
+            <MessageCard selectedPhrase={text}/>
+            <CustomButtom title={'Gerar'} onPress={shuffle}/>
         </View>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
-import CustomButtom from '../components/CustomButtom'
 import MessageCard from "../components/MessageCard";
+import { Button } from 'react-native-material-ui';
 import translate from "../locale";
 import Utils from "../utils";
 
@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <MessageCard selectedPhrase={text}/>
-            <CustomButtom title={'Gerar'} onPress={shuffle}/>
+            <Button primary text={translate('randomize')} onPress={shuffle}/>
         </View>
     );
 };

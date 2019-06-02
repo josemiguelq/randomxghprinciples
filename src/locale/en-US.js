@@ -1,5 +1,6 @@
 export default {
     shareButton : 'Share',
+    randomize : 'Next',
     phrases: [
         {
             title: 'Axioma 1',

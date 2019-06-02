@@ -54,13 +54,13 @@ export default {
         },
         {
             title: 'Axiom 11',
-            subTitle: 'XGH é totalmente anárquico.',
-            message: 'A figura de um gerente de projeto é totalmente descartável. Não tem dono, cada um faz o que quiser na hora que os problemas e requisitos vão surgindo (Vide Axiom 4).'
+            subTitle: 'XGH is totally anarchic.',
+            message: 'The figure of a project manager is totally disposable. It has no owner, each one does what he wants at the time that problems and requirements arise (see Axiom 4).'
         },
         {
             title: 'Axiom 12',
-            subTitle: 'Se iluda sempre com promessas de melhorias.',
-            message: 'Colocar TODO no código como uma promessa de melhoria ajuda o desenvolvedor XGH a não sentir remorso ou culpa pela cagada que fez. É claro que o refactoring nunca será feito (Vide Axiom 10).'
+            subTitle: 'Always deceive yourself with promises of improvement.',
+            message: 'Putting EVERYTHING in the code as a promise of improvement helps the XGH developer not to feel remorse or guilt over the crap he\'s made. Of course, refactoring will never be done (see Axiom 10).'
         },
         {
             title: 'Axiom 13',

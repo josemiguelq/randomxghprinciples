@@ -9,8 +9,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignContent: 'center',
-        marginHorizontal: 16,
-        marginTop: 16
+        margin: 16
     },
     separator: {
         padding: 5

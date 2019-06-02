@@ -4,6 +4,7 @@ import MessageCard from "../components/MessageCard";
 import { Button } from 'react-native-material-ui';
 import translate from "../locale";
 import Utils from "../utils";
+import Advertisement from "../components/AdvertisementBanner";
 
 const styles = StyleSheet.create({
     container: {
@@ -23,9 +24,12 @@ export default function Home() {
     }
 
     return (
-        <View style={styles.container}>
-            <MessageCard selectedPhrase={text}/>
-            <Button primary text={translate('randomize')} onPress={shuffle}/>
+        <View style={{flex: 1}}>
+            <View style={styles.container}>
+                <MessageCard selectedPhrase={text}/>
+                <Button primary text={translate('randomize')} onPress={shuffle}/>
+            </View>
+            <Advertisement/>
         </View>
     );
 };

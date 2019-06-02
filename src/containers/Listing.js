@@ -2,6 +2,7 @@ import React from 'react';
 import { View, ScrollView, StyleSheet, FlatList } from 'react-native';
 import translate from "../locale";
 import MessageCard from "../components/MessageCard";
+import Advertisement from "../components/AdvertisementBanner";
 
 const styles = StyleSheet.create({
     container: {
@@ -23,7 +24,7 @@ export default function Listing() {
                   data={phrases}
                   renderItem={({item}) => <MessageCard selectedPhrase={item}/>}
                   keyExtractor={item => item.title}
-                  ItemSeparatorComponent={() => <View style={styles.separator}/>}
+                  ItemSeparatorComponent={() => <View style={styles.separator}><Advertisement/></View>}
                 />
             </View>
         </ScrollView>

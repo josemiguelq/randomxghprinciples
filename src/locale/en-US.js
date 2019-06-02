@@ -9,48 +9,48 @@ export default {
         },
         {
             title: 'Axiom 2',
-            subTitle: 'Existem 3 formas de se resolver um problema, a correta, a errada e a XGH, que é igual à errada, só que mais rápida.',
-            message: 'XGH é mais rápido que qualquer metodologia de desenvolvimento de software que você conhece (Vide Axiom 14).'
+            subTitle: 'There are 3 ways to solve a problem, the correct one, the wrong one and the XGH, which is the same as the wrong one, but faster.',
+            message: 'XGH is faster than any software development methodology you know (see Axiom 14).'
         },
         {
             title: 'Axiom 3',
-            subTitle: 'Quanto mais XGH você faz, mais precisará fazer.',
-            message: 'Para cada problema resolvido usando XGH, mais uns 7 são criados. Mas todos eles serão resolvidos da forma XGH. XGH tende ao infinito.'
+            subTitle: 'The more XGH you do, the more you need to do.',
+            message: 'For each problem solved using XGH, a further 7 are created. But all of them will be solved in the XGH way. XGH tends to infinity.'
         },
         {
             title: 'Axiom 4',
-            subTitle: 'XGH é totalmente reativo.',
-            message: 'Os erros só existem quando aparecem.'
+            subTitle: 'XGH is fully reactive.',
+            message: 'Errors only exist when they appear.'
         },
         {
             title: 'Axiom 5',
-            subTitle: 'XGH vale tudo, só não vale dar o toba.',
-            message: 'Resolveu o problema? Compilou? Commit e era isso.'
+            subTitle: 'XGH is worth everything, just not worth giving the ass.',
+            message: 'Solved the problem? Compiled? Commit and that was it.'
         },
         {
             title: 'Axiom 6',
-            subTitle: 'Commit sempre antes de update.',
-            message: 'Se der merda, a sua parte estará sempre correta.. e seus colegas que se fodam.'
+            subTitle: 'Commit always before update.',
+            message: 'If shit happens, your part will always be correct .. screw up coworkers.'
         },
         {
             title: 'Axiom 7',
-            subTitle: 'XGH não tem prazo.',
-            message: 'Os prazos passados pelo seu cliente são meros detalhes. Você SEMPRE conseguirá implementar TUDO no tempo necessário (nem que isso implique em acessar o BD por um script malaco).'
+            subTitle: 'XGH has no deadline.',
+            message: 'The deadlines passed by your client are mere details. You\'ll ALWAYS be able to implement EVERYTHING in the time required (even if that means accessing the DB through a malaco script).'
         },
         {
             title: 'Axiom 8',
-            subTitle: 'Esteja preparado para pular fora quando o barco começar a afundar… ou coloque a culpa em alguém ou algo.',
-            message: 'Pra quem usa XGH, um dia o barco afunda. Quanto mais o tempo passa, mais o sistema vira um monstro. O dia que a casa cair, é melhor seu curriculum estar cadastrado na APInfo, ou ter algo pra colocar a culpa.'
+            subTitle: 'Be prepared to jump out when the boat begins to sink ... or put the blame on someone or something.',
+            message: 'For those who use XGH, one day the boat sinks. The more time passes, the more the system becomes a monster. The day that the house falls, it is better that your curriculum is registered in APInfo, or have something to put the blame.'
         },
         {
             title: 'Axiom 9',
-            subTitle: 'Seja autêntico, XGH não respeita padrões.',
-            message: 'Escreva o código como você bem entender, se resolver o problema, commit e era isso.'
+            subTitle: 'Be authentic, XGH does not respect standards.',
+            message: 'Write the code as you see fit, if you solve the problem, commit and that was it.'
         },
         {
             title: 'Axiom 10',
-            subTitle: 'Não existe refactoring, apenas rework.',
-            message: 'Se der merda, refaça um XGH rápido que solucione o problema. O dia que o rework implicar em reescrever a aplicação toda, pule fora, o barco irá afundar (Vide Axiom 8).'
+            subTitle: 'There is no refactoring, just rework.',
+            message: 'If you give shit, redo a fast XGH that fixes the problem. The day that the rework entails in rewriting the whole application, jump off, the boat will sink (See Axiom 8).'
         },
         {
             title: 'Axiom 11',

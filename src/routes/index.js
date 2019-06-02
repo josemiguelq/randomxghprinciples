@@ -1,21 +1,13 @@
-import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import Home from '../containers/Home';
-import Listing from '../containers/Listing';
-import translate from "../locale";
+import { createAppContainer, createStackNavigator } from "react-navigation";
+import HomeTab from "./HomeTab";
 
-const Routes = createAppContainer(createBottomTabNavigator({
-    Home: {
-        screen: Home,
+const StackNavigator = createStackNavigator({
+    HomeTab: {
+        screen: HomeTab,
         navigationOptions: {
-            title: translate('axiomOfTheDay')
-        }
-    },
-    Listing: {
-        screen: Listing,
-        navigationOptions: {
-            title: translate('listOfAxims')
+            title: 'eXtreme Go Horse'
         }
     }
-}));
+});
 
-export default Routes;
+export default createAppContainer(StackNavigator)

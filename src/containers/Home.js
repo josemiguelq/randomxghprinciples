@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import CustomButtom from '../components/CustomButtom'
-import MessageCard from "../components/messageCard";
+import MessageCard from "../components/MessageCard";
 import translate from "../locale";
 import Utils from "../utils";
 

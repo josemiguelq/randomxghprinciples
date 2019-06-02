@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import CustomButtom from '../components/CustomButtom'
 import MessageCard from "../components/messageCard";
 import translate from "../locale";
 import Utils from "../utils";
@@ -20,6 +21,7 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <MessageCard selectedPhrase={selectedPhrase}/>
+            <CustomButtom title={'Gerar'} />
         </View>
     );
 };

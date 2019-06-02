@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import MessageCard from "../components/MessageCard";
 import { COLOR } from 'react-native-material-ui';
 import translate from "../locale";
-import Utils from "../utils";
+import { selectRandomPhrase } from "../utils";
 import Advertisement from "../components/AdvertisementBanner";
 
 const styles = StyleSheet.create({
@@ -17,16 +17,12 @@ const styles = StyleSheet.create({
 
 export default function Home() {
     const phrases = translate('phrases');
-    const [text, setText] = useState(Utils.selectRandomPhrase(phrases));
-
-    function shuffle() {
-        setText(Utils.selectRandomPhrase(phrases));
-    }
+    const selectedPhrase = selectRandomPhrase(phrases);
 
     return (
         <View style={{flex: 1, backgroundColor: COLOR.green500}}>
                 <View style={styles.container}>
-                    <MessageCard selectedPhrase={text}/>
+                    <MessageCard selectedPhrase={selectedPhrase}/>
                 </View>
                 <Advertisement/>
         </View>

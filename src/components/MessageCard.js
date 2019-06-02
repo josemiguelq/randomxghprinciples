@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from "react-native";
 import translate from "../locale";
-import share from "../services/ShareText";
 import { Button, Card } from 'react-native-material-ui';
 import Divider from "react-native-material-ui/src/Divider";
+import { share } from "../utils";
 
 const styles = StyleSheet.create({
     messageCard: {

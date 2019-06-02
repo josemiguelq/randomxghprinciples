@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import MessageCard from "../components/messageCard";
+import MessageCard from "../components/MessageCard";
 import translate from "../locale";
 import Utils from "../utils";
 

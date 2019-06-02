@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     messageCard: {
         backgroundColor: '#ef553a',
         paddingTop: 10,
-        borderRadius: 10
+        borderRadius: 10,
+        marginBottom: 20,
     },
     messageBox: {
         paddingHorizontal: 20

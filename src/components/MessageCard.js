@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     messageBody: {
         fontSize: 14,
         color: '#232F34',
-        paddingVertical: 8
+        paddingVertical: 16
     }
 });
 

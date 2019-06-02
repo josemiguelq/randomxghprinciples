@@ -1,8 +1,7 @@
 import React from 'react';
-import {StyleSheet, Text, View} from "react-native";
-import ShareButton from "./shareButton";
+import { Button, StyleSheet, Text, View } from "react-native";
 import translate from "../locale";
-import Utils from "../utils";
+import share from "../services/shareText";
 
 const styles = StyleSheet.create({
     messageCard: {
@@ -36,19 +35,19 @@ const styles = StyleSheet.create({
     }
 });
 
-export default function MessageCard() {
-    const phrases = translate('phrases');
-    const selectedPhrase = Utils.selectRandomPhrase(phrases);
-
+export default function MessageCard(props) {
+    const { selectedPhrase } = props;
     return (
         <View style={styles.messageCard}>
-            <View style={styles.messageBox}>
+            <View style={{backgroundColor: '#000'}}>
                 <Text style={styles.messageBoxTitle}>{selectedPhrase.title}</Text>
+            </View>
+            <View style={styles.messageBox}>
                 <Text style={styles.messageBoxSubTitle}>{selectedPhrase.subTitle}</Text>
                 <Text style={styles.messageBoxBody}>{selectedPhrase.message}</Text>
             </View>
             <View style={styles.shareButtonBox}>
-                <ShareButton toShare={selectedPhrase}/>
+                <Button color="#000" onPress={() => share(selectedPhrase)} title={translate('shareButton')} />
             </View>
         </View>
     );

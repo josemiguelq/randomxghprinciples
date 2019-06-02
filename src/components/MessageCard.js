@@ -30,15 +30,13 @@ export const MessageCard = (props) => {
     const { selectedPhrase } = props;
     return (
         <Card>
-            <View>
-                <View style={styles.messageCard}>
-                    <Text style={styles.messageTitle}>{selectedPhrase.title}</Text>
-                    <Text style={styles.messageSubTitle}>{selectedPhrase.subTitle}</Text>
-                    <Text style={styles.messageBody}>{selectedPhrase.message}</Text>
-                    <Divider/>
-                </View>
-                <Button primary onPress={() => share(selectedPhrase)} text={translate('shareButton')} />
+            <View style={styles.messageCard}>
+                <Text style={styles.messageTitle}>{selectedPhrase.title}</Text>
+                <Text style={styles.messageSubTitle}>{selectedPhrase.subTitle}</Text>
+                <Text style={styles.messageBody}>{selectedPhrase.message}</Text>
+                <Divider/>
             </View>
+            <Button primary onPress={() => share(selectedPhrase)} text={translate('shareButton')} />
         </Card>
     );
 };

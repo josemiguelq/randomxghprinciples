@@ -3,6 +3,7 @@ import { View, ScrollView, StyleSheet, FlatList } from 'react-native';
 import translate from "../locale";
 import MessageCard from "../components/MessageCard";
 import Advertisement from "../components/AdvertisementBanner";
+import {COLOR} from "react-native-material-ui";
 
 const styles = StyleSheet.create({
     container: {
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
 export default function Listing() {
     const phrases = translate('phrases');
     return (
-        <ScrollView>
+        <ScrollView style={{backgroundColor: COLOR.green500}}>
             <View style={styles.container}>
                 <FlatList
                   data={phrases}

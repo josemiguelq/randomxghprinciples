@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import MessageCard from "../components/MessageCard";
-import { Button } from 'react-native-material-ui';
+import { COLOR } from 'react-native-material-ui';
 import translate from "../locale";
 import Utils from "../utils";
 import Advertisement from "../components/AdvertisementBanner";
@@ -24,12 +24,11 @@ export default function Home() {
     }
 
     return (
-        <View style={{flex: 1}}>
-            <View style={styles.container}>
-                <MessageCard selectedPhrase={text}/>
-                <Button primary text={translate('randomize')} onPress={shuffle}/>
-            </View>
-            <Advertisement/>
+        <View style={{flex: 1, backgroundColor: COLOR.green500}}>
+                <View style={styles.container}>
+                    <MessageCard selectedPhrase={text}/>
+                </View>
+                <Advertisement/>
         </View>
     );
 };

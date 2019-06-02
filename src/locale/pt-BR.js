@@ -2,6 +2,7 @@ export default {
     axiomOfTheDay: 'Axioma do dia',
     listOfAxims: 'Lista de Axiomas',
     shareButton : 'Compartilhar',
+    randomize : 'Próximo',
     phrases: [
         {
             title: 'Axioma 1',

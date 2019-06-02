@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import MessageCard from "../components/MessageCard";
+import { Button } from 'react-native-material-ui';
 import translate from "../locale";
 import Utils from "../utils";
 
@@ -15,11 +16,16 @@ const styles = StyleSheet.create({
 
 export default function Home() {
     const phrases = translate('phrases');
-    const selectedPhrase = Utils.selectRandomPhrase(phrases);
+    const [text, setText] = useState(Utils.selectRandomPhrase(phrases));
+
+    function shuffle() {
+        setText(Utils.selectRandomPhrase(phrases));
+    }
 
     return (
         <View style={styles.container}>
-            <MessageCard selectedPhrase={selectedPhrase}/>
+            <MessageCard selectedPhrase={text}/>
+            <Button primary text={translate('randomize')} onPress={shuffle}/>
         </View>
     );
 };

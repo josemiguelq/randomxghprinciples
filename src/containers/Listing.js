@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     }
 });
 
-
 export default function Listing() {
     const phrases = translate('phrases');
     return (

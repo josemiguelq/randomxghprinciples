@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     messageSubTitle: {
         fontWeight: 'bold',
-        fontSize: 16,
+        fontSize: 24,
         color: '#232F34'
     },
     messageBody: {
